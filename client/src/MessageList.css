@@ -1,0 +1,25 @@
+.MessageList{
+  border: 1px solid #000;
+  width: 60%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.MessageList-message{
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.MessageList-message i {
+  color: blue;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.MessageList-message i:after {
+  content: ':';
+} 
