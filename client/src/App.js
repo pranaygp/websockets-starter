@@ -9,8 +9,6 @@ class App extends Component {
   constructor() {
     super()
     //TODO: Setup WebSocket client
-    this._ws = new WebSocket('ws://localhost:8080')
-    this._ws.onmessage = m => this.receiveMessage(JSON.parse(m.data))
   }
 
   state = {
@@ -22,7 +20,6 @@ class App extends Component {
 
   sendMessage = ({username, message}) => {
     //TODO: Send message over websockets
-    this._ws.send(JSON.stringify({username, message}))
   }
 
   receiveMessage = ({username, message}) => {
